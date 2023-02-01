@@ -1,0 +1,18 @@
+.header {
+    background-color: #131313;
+    max-height: 83px;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1263px;
+    margin: 0 auto;
+}
+.header_logo_link{
+    margin: 0;
+}
+.nav_list{
+    display: flex;
+}
