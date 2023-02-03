@@ -130,7 +130,7 @@
 }
 
 .main_header {
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -141,7 +141,7 @@
 }
 
 .main_header__gold {
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -151,7 +151,7 @@
 }
 
 .main_text {
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
