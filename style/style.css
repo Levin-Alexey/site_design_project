@@ -100,13 +100,19 @@
     text-decoration: none;
 }
 
+
 .main {
     position: relative;
+    margin: 0;
+
 }
 
 .main_img {
+    display: block;
     width: 100%;
     z-index: 0;
+
+
 }
 
 .main_img-shadow {
@@ -126,7 +132,6 @@
     left: 10%;
     top: 30%;
     z-index: 2;
-
 }
 
 .main_header {
@@ -169,10 +174,9 @@
 .main_call {
     max-width: 207px;
     max-height: 51px;
-    background-color: #E3B873;
     margin-bottom: 22px;
     margin-top: 24px;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border: 1px solid #FFFFFF;
     border-radius: 2px;
     margin-right: 40px;
 }
@@ -221,4 +225,101 @@
     text-align: center;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.projects {
+    background-color: #131313;
+}
+
+.projects_left {
+    max-width: 450px;
+}
+
+.projects_info-title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.projects_info-text {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.projects_info {
+    display: grid;
+    grid-template-columns: 160px 220px;
+}
+
+.info-item_title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.info-item_text {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.projects_slider{
+    max-width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+.left_btn{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-right: 30px;
+    padding: 0;
+}
+.left-btn_img{
+   
+}
+.indicators_list{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.indicator_item{
+    margin-right: 20px;
+    padding: 0;
+}
+.indicator_ball{
+    width: 10px;
+    height: 10px;
+    border-radius:30px;
+    background: rgba(255, 255, 255, 0.3);
+}
+.indicator_ball.indicator_ball__active{
+    width: 10px;
+    height: 10px;
+    border-radius:30px;
+    background-color: #fff;
+}
+.right_btn{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-right: 30px;
+    padding: 0;
+   
 }
