@@ -132,6 +132,7 @@
     left: 10%;
     top: 30%;
     z-index: 2;
+
 }
 
 .main_header {
@@ -229,10 +230,27 @@
 
 .projects {
     background-color: #131313;
+    margin: 0 auto;
+    padding-top: 107px;
+
+}
+
+.projects_container {
+    /*display: flex;
+    justify-content: center;*/
+    display: grid;
+    grid-template-columns: 445px 680px;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    column-gap: 50px;
 }
 
 .projects_left {
+    display: block;
     max-width: 450px;
+    position: relative;
+    transform: translateY(17%);
 }
 
 .projects_info-title {
@@ -243,6 +261,7 @@
     line-height: 37px;
     text-transform: uppercase;
     color: #E3B873;
+    margin-bottom: 33px;
 }
 
 .projects_info-text {
@@ -252,11 +271,15 @@
     font-size: 14px;
     line-height: 26px;
     color: #FFFFFF;
+    margin-bottom: 42px;
+
 }
 
 .projects_info {
     display: grid;
     grid-template-columns: 160px 220px;
+    gap: 30px;
+    margin-bottom: 70px;
 }
 
 .info-item_title {
@@ -270,56 +293,130 @@
 }
 
 .info-item_text {
+    display: block;
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 21px;
     color: #FFFFFF;
+    max-width: 100px;
 }
-.projects_slider{
+
+.projects_slider {
     max-width: 130px;
     display: flex;
     justify-content: space-between;
 }
-.left_btn{
+
+.left_btn {
     border: none;
     background: none;
     cursor: pointer;
     margin-right: 30px;
     padding: 0;
 }
-.left-btn_img{
-   
-}
-.indicators_list{
+
+.left-btn_img {}
+
+.indicators_list {
     display: flex;
     justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-.indicator_item{
+
+.indicator_item {
     margin-right: 20px;
     padding: 0;
 }
-.indicator_ball{
+
+.indicator_ball {
     width: 10px;
     height: 10px;
-    border-radius:30px;
+    border-radius: 30px;
     background: rgba(255, 255, 255, 0.3);
 }
-.indicator_ball.indicator_ball__active{
+
+.indicator_ball.indicator_ball__active {
     width: 10px;
     height: 10px;
-    border-radius:30px;
+    border-radius: 30px;
     background-color: #fff;
 }
-.right_btn{
+
+.right_btn {
     border: none;
     background: none;
     cursor: pointer;
     margin-right: 30px;
     padding: 0;
-   
+}
+
+.projects_right {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.projects-nav_list {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    padding-bottom: 50px;
+}
+
+.projects-nav_link {
+    text-decoration: none;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    margin-right: 55px;
+}
+
+.projects-nav_link.projects-nav_link__active {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #E3B873;
+    border-bottom: 2px solid #E3B873;
+}
+
+.online-control_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.control_title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.camera_elements {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.camera_item {
+    margin-right: 10px;
 }
