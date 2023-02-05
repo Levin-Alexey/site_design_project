@@ -446,44 +446,42 @@ body {
     padding-bottom: 10px;
 }
 
+
+
 .control_img {
     position: relative;
     box-sizing: border-box;
     display: flex;
-    
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
 .img-online {
     box-sizing: border-box;
     max-width: 100%;
     z-index: 2;
-    margin-bottom: -20%;
+    margin-bottom: -32%;
     padding: 0;
 }
 
 .control_video {
-   
+    position: absolute;
     box-sizing: border-box;
+    top: 70%;
+    left: 45%;
     z-index: 3;
     border: none;
     background: none;
     cursor: pointer;
     padding: 0;
-    
+
 
 }
 
-.video_button {
-    position: absolute;
-   left: 45%;
-    top: 70%;
-  
-}
+.video_button {}
 
 .online-control_sub {
-    padding-top: 17%;
+    margin-top: 250px;
 
 }
 
@@ -509,13 +507,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     max-width: 1263px;
     margin: 0 auto;
 }
 
 .form_sub_text {
-    
+
     max-width: 680px;
     font-family: 'Nunito Sans';
     font-style: normal;
@@ -524,9 +522,10 @@ body {
     line-height: 37px;
     text-align: center;
 }
-.sub_form{
+
+.sub_form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
