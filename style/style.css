@@ -1,7 +1,8 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
+
 .header {
     background-color: #131313;
     max-height: 83px;
@@ -403,12 +404,12 @@ body{
 
 .online-control_container {
     position: relative;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 
 }
 
@@ -458,17 +459,61 @@ body{
     margin: 0;
     padding: 0;
 }
-.control_video{
-    
+
+.control_video {
+
     z-index: 3;
     border: none;
     background: none;
     cursor: pointer;
     padding: 0;
-    
-   
+
+
 }
 
-.video_button{
-  transform: translateY(40%);
+.video_button {
+    transform: translateY(40%);
+}
+
+.online-control_sub {
+    margin-top: 17%;
+
+}
+
+.control-sub_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1263px;
+    margin: 0 auto;
+
+}
+
+.control_sub_img {}
+
+.sub_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.form-sub_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    max-width: 1263px;
+    margin: 0 auto;
+}
+
+.form_sub_text {
+    
+    max-width: 680px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
 }
