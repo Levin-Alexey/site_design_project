@@ -123,7 +123,7 @@ body {
 .main_img-shadow {
     width: 100%;
     position: absolute;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.1);
     left: 0;
     top: 0;
 
@@ -135,7 +135,7 @@ body {
     flex-direction: column;
     max-width: 600px;
     left: 10%;
-    top: 30%;
+    top: 25%;
     z-index: 2;
 
 }
@@ -439,6 +439,7 @@ body {
     display: flex;
     list-style-type: none;
     padding: 0;
+    margin-bottom: 0;
 }
 
 .camera_item {
@@ -447,7 +448,9 @@ body {
 }
 
 
-
+.wrap_online{
+    position: relative;
+}
 .control_img {
     position: relative;
     box-sizing: border-box;
@@ -459,9 +462,21 @@ body {
 .img-online {
     box-sizing: border-box;
     max-width: 100%;
-    z-index: 2;
+    z-index: 0;
     margin-bottom: -32%;
     padding: 0;
+    
+}
+.image-filter{
+    box-sizing: border-box;
+    width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 3;
+	background: #000;
+	opacity: 0.6;
+
+    
 }
 
 .control_video {
@@ -478,7 +493,7 @@ body {
 
 }
 
-.video_button {}
+
 
 .online-control_sub {
     margin-top: 250px;
@@ -501,6 +516,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-self: center;
+    margin-bottom: 30px;
 }
 
 .form-sub_container {
@@ -510,6 +526,7 @@ body {
     align-items: center;
     max-width: 1263px;
     margin: 0 auto;
+
 }
 
 .form_sub_text {
@@ -521,6 +538,7 @@ body {
     font-size: 18px;
     line-height: 37px;
     text-align: center;
+    margin-bottom: 90px;
 }
 
 .sub_form {
@@ -528,4 +546,76 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.first-level_form {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    margin-bottom: 30px;
+
+}
+
+.first-block {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.btn_container {
+    position: relative;
+    bottom: 55%;
+}
+
+.btn_sub {
+    cursor: pointer;
+    width: 207px;
+    max-height: 51px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    background: #E3B873;
+    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 2px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+
+}
+
+
+
+.visual-hidden {
+    visibility: hidden;
+}
+
+.in_form {
+    width: 231px;
+    border: 0px;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    ;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+
+    color: #363636;
+}
+
+.label-form {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+
+    color: rgba(54, 54, 54, 0.5);
 }
