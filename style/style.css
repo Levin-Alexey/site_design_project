@@ -980,34 +980,25 @@ body {
 }
 
 .realized-block_conainer {
-    background-image: url(/img/image\ 5.1.png);
-    filter: brightness(0.3);
-    background-image: url(/img/Group\ 22.png);
+    background-image: url(/img/image\ 5.1.png); filter: brightness(0.3);
     display: flex;
     justify-content: space-between;
-
 }
-
 .realized_left_title {
-    display: block;
+    position: relative;
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
     font-size: 27px;
     line-height: 37px;
     text-transform: uppercase;
-    color: #e41010;
-    z-index: 222;
+    color: #fff;
 }
-
 .realized_left {
     position: relative;
     display: flex;
     flex-direction: column;
-
 }
-
 .realized-left_list {
     list-style: none;
-
 }
