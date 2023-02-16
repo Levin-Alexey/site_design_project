@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="/style/mobile.css">
     <link rel="stylesheet" href="/style/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap" rel="stylesheet">
@@ -20,9 +21,9 @@
 <body>
     <header>
         <section class="header">
-            <div class="header_container hidden">
+            <div class="header_container ">
                 <div class="header_logo"><a class="header_logo_link" href="">IC "Repair Design Project"</a></div>
-                <nav class="header_nav">
+                <nav class="header_nav hidden">
                     <ul class="nav_list">
                         <li class="nav_item nav_item__active"><a class="nav_link nav_link__active" href="">HOME</a></li>
                         <li class="nav_item nav_item__active"><a class="nav_link" href="">PROJECTS</a></li>
@@ -33,14 +34,14 @@
                     </ul>
                 </nav>
                 <div class="header_phone"><a class="phone_link" href="tel:+79287683239">+7 (928) 768-32-39</a></div>
-                <div class="header_call-back">
+                <div class="header_call-back hidden">
                     <a class="button_call" href="#">REQUEST A CALL</a>
                 </div>
             </div>
         </section>
     </header>
     <main>
-        <section class="main">
+        <!--<section class="main">
             <img class="main_img" src="/img/image 4.3.png" alt="">
             <img class="main_img-shadow" src="/img/Rectangle 3.3.png" alt="">
             <div class="main_container">
@@ -54,8 +55,30 @@
                     <div class="main_sub"><a class="main_button_sub" href="#">SUBMIT YOUR APPLICATION</a></div>
                 </div>
             </div>
+        </section>-->
+        <section class="main_slider">
+
+            <div class="main_slider_container">
+                <!--  <img class="slider_img" src="/img/main_slider_img.png" alt="">-->
+
+                <div class="main_slider_text">
+                    <div class="slider_title">Turnkey Repair in the <br> city of <span
+                            class="rostov">Rostov-on-Don</span></div>
+                    <div class="slider_text">Get ready-made turnkey repairs on time <br>
+                        with work time saving up to 45 days and 20% from <br>
+                        cost of materials due to the organization of work
+                    </div>
+                    <div class="slider_btn_container">
+                        <div class="slider_button"><a class="slider_button_link" href="">CALCULATE THE COST</a></div>
+                        <div class="slider_button"><a class="slider_button_link" href="">SUBMIT YOUR APPLICATION</a>
+                        </div>
+                    </div>
+                    <div class="overlay_slider"></div>
+                </div>
+
+            </div>
         </section>
-        <section class="projects">
+        <section class="projects hidden">
             <div class="projects_container">
                 <div class="projects_left">
                     <div class="projects_info-title">Completed projects</div>
@@ -80,7 +103,7 @@
                             <span class="info-item_text">Upon request</span>
                         </div>
                     </div>
-                    <div class="projects_slider">
+                    <div class="projects_slider  hidden">
                         <button class="left_btn"><img class="left-btn_img" src="/img/left.svg" alt=""></button>
                         <ul class="indicators_list">
                             <li class="indicator_item" data-slide-to="0">
@@ -96,8 +119,11 @@
                         <button class="right_btn"><img class="left-btn_img" src="/img/right.svg" alt=""></button>
                     </div>
                 </div>
-                <div class="projects_right">
-                    <div class="projects_nav_slider">
+                <div class="projects_right__mobile mobile">
+
+                </div>
+                <div class="projects_right hidden">
+                    <div class="projects_nav_slider hidden">
                         <ul class="projects-nav_list">
                             <li class="projects-nav_item"><a class="projects-nav_link projects-nav_link__active"
                                     href="">Rostov-on-Don, Admiral</a></li>
@@ -112,6 +138,41 @@
             </div>
 
         </section>
+        <section class="projects_mobile mobile">
+            <div class="projects_container_mobile">
+                <div class="projects_title_mobile">Completed <br> projects</div>
+                <div class="projects_text_mobile">Only a small part of the work performed by our company is <br>
+                    presented on the site. For 14 years on in the construction <br> market we have made happy more than
+                    1000 families</div>
+                <div class="projects_img_mobile">
+                    <div class="projects_btn_mobile">
+                        <div class="btn_mobile_left"><a href=""><img class="btn_mobile" src="/img/btn_mob_left.svg"
+                                    alt=""></a></div>
+                        <div class="btn_mobile_right"><a href=""><img class="btn_mobile" src="/img/btn_mob_right.svg"
+                                    alt=""></a></div>
+                    </div>
+                </div>
+                <div class="projects_info">
+                    <div class="projects_info-item">
+                        <h3 class="info-item_title">City:</h3>
+                        <span class="info-item_text">Rostov-on-Don LCD admiral</span>
+                    </div>
+                    <div class="projects_info-item">
+                        <h3 class="info-item_title">apartment area:</h3>
+                        <span class="info-item_text">81 m2</span>
+                    </div>
+                    <div class="projects_info-item">
+                        <h3 class="info-item_title">Repair time:</h3>
+                        <span class="info-item_text">3.5 months</span>
+                    </div>
+                    <div class="projects_info-item">
+                        <h3 class="info-item_title">Repair Cost:</h3>
+                        <span class="info-item_text">Upon request</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
         <section class="online-control_section">
             <div class="online-control_container">
                 <div class="online-control_block">
@@ -124,12 +185,20 @@
                 </div>
 
             </div>
-            <div class="control_img">
+
+
+            <div class="control_img hidden">
                 <div class="wrap_online">
                     <img class="img-online" src="/img/image 6.png" alt="">
                     <button class="control_video"><img class="video_button" src="/img/Group 8.svg" alt=""></button>
                 </div>
             </div>
+            <div class="online-container_mobile mobile">
+                <div> <img class="bgimg_online" src="/img/image 6.png" alt=""></div>
+                <div class="online-overlay_mobile"></div>
+                <div class="play_btn_block"><img class="play_btn" src="/img/play_btn1.svg" alt=""></div>
+            </div>
+
         </section>
 
         <section class="online-control_sub">
@@ -142,7 +211,7 @@
                     on the clock. At any time, you can go to our website and monitor the progress of work in your
                     apartment. You can watch the live broadcast from one of our facilities!
                     Leave a request below and you will receive a link to the broadcast.</div>
-                <div class="form-container">
+                <div class="form-container hidden">
                     <form class="sub_form" action="#" method="post">
                         <div class="first-level_form">
                             <div class="first-block">
@@ -172,6 +241,42 @@
                         </div>
                     </form>
                 </div>
+
+
+
+
+                <div class="form-container_mobile mobile">
+                    <form class="sub_form_mobile" action="#" method="post">
+                        <div class="first-level_form__mobile">
+                            <div class="first-block">
+                                <label class="label-form__mobile" for="username">Name</label>
+                                <input class="in_form__mobile" type="text" name="username" id="username" value=""
+                                    placeholder="What is your name:">
+                            </div>
+                            <div class="first-block">
+                                <label class="label-form__mobile" for="userphone">Phone</label>
+                                <input class="in_form__mobile" type="tel" name="userphone" id="userphone" value=""
+                                    placeholder="Your phone number:">
+                            </div>
+
+                            <div class="first-checkbox_mobile">
+                                <label class="label">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="fake"></span>
+                                    <span class="check_text_mobile">I agree to the processing of personal data.</span>
+                                </label>
+                            </div>
+                            <div class="btn_container_mobile"><button class="btn_sub_mobile">Submit</button></div>
+
+
+                            <!-- <div class="block_btn">
+                            </div>-->
+                        </div>
+
+                    </form>
+                </div>
+
+
             </div>
         </section>
         <section class="repair">
@@ -255,8 +360,15 @@
 
                 </div>
             </div>
+
+
+
+
+
+
         </section>
-        <section class="request-section">
+
+        <section class="request-section hidden">
             <div class="request_container">
                 <div class="request-left">
                     <div class="benefit_container">
@@ -375,7 +487,7 @@
             </div>
 
         </section>
-        <section class="clients">
+        <section class="clients hidden">
             <div class="clients_container">
                 <div class="clients_title">our clients</div>
                 <div class="client_logo">
@@ -471,7 +583,7 @@
             </div>
         </section>
         <section class="address">
-            <div class="address_form_block">
+            <div class="address_form_block hidden">
                 <div class="address_title">have any questions?</div>
                 <form class="request-form" action="#">
                     <div class="form_address_first">
@@ -506,21 +618,85 @@
                     </div>
                 </form>
             </div>
-            <div class="address_container">
+            <div class="address_container hidden">
                 <div class="address_main">Rostov-on-Don, Nansen St., 239 Shopping Center <br>
                     Decorum Tel +7 (928) 768 32 29
                 </div>
                 <div class="address_social-btn">
-                    <img src="/img/mail_logo.svg" alt="">
-                    <img src="/img/inst_logo.svg" alt="">
+                    <a href=""><img src="/img/mail_logo.svg" alt=""></a>
+                    <a href=""><img src="/img/inst_logo.svg" alt=""></a>
                 </div>
 
                 <img class="address_map" src="/img/map.png" alt="">
 
             </div>
+            <div class="address_container_mobile mobile">
+                <div class="realize_container_mobile mobile">
+                    <div class="realize_title_mobile">We realize your <br> wildest fantasies</div>
+
+                    <div class="realize_img_mobile">
+                        <div class="projects_btn_mobile">
+                            <div class="btn_mobile_left"><img class="btn_mobile" src="/img/btn_mob_left.svg" alt="">
+                            </div>
+                            <div class="btn_mobile_right"><img class="btn_mobile" src="/img/btn_mob_right.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="block_address_form">
+
+
+                    <div class="address_title_mobile">have any questions?</div>
+                    <div class="form-address_mobile mobile">
+                        <form class="sub_form_mobile" action="#" method="post">
+                            <div class="first-level_form__mobile">
+                                <div class="first-block">
+                                    <label class="label-form__mobile" for="username">Name</label>
+                                    <input class="in_form_address__mobile" type="text" name="username" id="username"
+                                        value="" placeholder="What is your name:">
+                                </div>
+                                <div class="first-block">
+                                    <label class="label-form__mobile" for="userphone">Phone</label>
+                                    <input class="in_form_address__mobile" type="tel" name="userphone" id="userphone"
+                                        value="" placeholder="Your phone number:">
+                                </div>
+                                <div class="first-block">
+                                    <label class="label-form__mobile" for="userphone">Question</label>
+                                    <input class="in_form_address__mobile" type="text" name="userphone" id="userphone"
+                                        value="" placeholder="I want to know:">
+                                </div>
+                                <div class="first-checkbox_mobile">
+                                    <label class="label">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="fake"></span>
+                                        <span class="check_text_mobile">I agree to the processing of personal
+                                            data.</span>
+                                    </label>
+                                </div>
+                                <div class="btn_container_mobile"><button class="btn_sub_mobile">Submit</button></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+
+                <img class="address_map" src="/img/map.png" alt="">
+
+                <div class="address_main">Rostov-on-Don, Nansen St., 239 Shopping Center <br>
+                    Decorum Tel +7 (928) 768 32 29
+                </div>
+                <div class="address_social-btn">
+                    <a href=""><img src="/img/mail_logo.svg" alt=""></a>
+                    <a href=""><img src="/img/inst_logo.svg" alt=""></a>
+                </div>
+
+            </div>
             <div class="realized_overlay_address"></div>
         </section>
-        <section class="header header_bootom">
+        <section class="header header_bootom hidden">
             <div class="header_container hidden">
                 <div class="header_logo"><a class="header_logo_link" href="">IC "Repair Design Project"</a></div>
                 <nav class="header_nav">
