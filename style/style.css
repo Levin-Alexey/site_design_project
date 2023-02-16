@@ -1772,18 +1772,18 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    
+
     position: relative;
     margin-top: -223px;
     z-index: 4;
-    
+
 }
 
 .realize_img_mobile {
     background: url(/img/image\ 5.1.png);
     background-repeat: no-repeat;
     background-size: cover;
-   
+
 }
 
 .realize_title_mobile {
@@ -1831,6 +1831,7 @@ body {
     z-index: 3;
     margin-top: 30px;
 }
+
 .in_form__mobile {
     background-color: #131313;
     border: 0;
@@ -1840,7 +1841,7 @@ body {
 }
 
 .in_form_address__mobile::placeholder {
-    
+
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
@@ -1848,24 +1849,26 @@ body {
     line-height: 138.72%;
     color: #FFFFFF;
 }
-.in_form_address__mobile{
-    
-   width: 100%;
+
+.in_form_address__mobile {
+
+    width: 100%;
     border: 0;
 
     border-bottom: 1px solid rgb(253, 253, 253);
     background-color: rgb(19, 19, 19, 0.0);
 }
-.block_address_form{
+
+.block_address_form {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
-.sub_form_mobile{
- 
-}
+
+.sub_form_mobile {}
+
 @media (min-width: 1300px) {
     .mobile {
         display: none;
@@ -1880,17 +1883,19 @@ body {
 
     .mobile {}
 
-    .realized_overlay_address{
+    .realized_overlay_address {
         background: rgba(0, 0, 0, 1);
     }
-    .address_map{
-        box-sizing:border-box;
+
+    .address_map {
+        box-sizing: border-box;
         display: block;
         margin-top: 50px;
         padding-right: 20px;
         padding-left: 20px;
         width: 100%;
     }
+
     .header_container {
         display: flex;
         justify-content: space-around;
